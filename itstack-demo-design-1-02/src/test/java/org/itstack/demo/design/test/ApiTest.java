@@ -1,5 +1,6 @@
 package org.itstack.demo.design.test;
 
+import org.itstack.demo.design.ShapeFactory;
 import org.itstack.demo.design.StoreFactory;
 import org.itstack.demo.design.store.ICommodity;
 import org.junit.Test;
@@ -34,6 +35,11 @@ public class ApiTest {
         ICommodity commodityService_3 = storeFactory.getCommodityService(3);
         commodityService_3.sendCommodity("10001","AQY1xjkUodl8LO975GdfrYUio",null,null);
 
+    }
+
+    @Test
+    public void testShape() {
+        ShapeFactory shapeFactory = new ShapeFactory();
     }
 
 }
